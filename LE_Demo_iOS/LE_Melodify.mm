@@ -47,8 +47,9 @@ class LE_Melodify {
     }
     
     void startMelodify() {
-        processingExample();
-        printf("%s\n", [@"hello" UTF8String]);
+        bool success = processingExample();
+        if (success) printf("%s\n", [@"The LE Melodify SDK sample application finished successfully." UTF8String]);
+        else printf("%s\n", [@"The LE Melodify SDK sample application finished unsuccessfully." UTF8String]);
     }
     
     //------------------------------------------------------------------------------

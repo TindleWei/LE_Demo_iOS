@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F0FEA5A1BE07AF700F454E2 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0FEA591BE07AF700F454E2 /* MediaPlayer.framework */; };
+		1F0FEA5B1BE0BDB500F454E2 /* samples in Resources */ = {isa = PBXBuildFile; fileRef = 1F78BE671BDF526500378539 /* samples */; };
 		1F78BE1F1BDF215200378539 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F78BE1E1BDF215200378539 /* main.m */; };
 		1F78BE221BDF215200378539 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F78BE211BDF215200378539 /* AppDelegate.m */; };
 		1F78BE251BDF215200378539 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F78BE241BDF215200378539 /* ViewController.m */; };
@@ -21,7 +22,6 @@
 		1F78BE631BDF50E400378539 /* libAudioIO_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F78BE601BDF50E400378539 /* libAudioIO_iOS.a */; };
 		1F78BE641BDF50E400378539 /* libSpectrumWorxMelodifySDK_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F78BE611BDF50E400378539 /* libSpectrumWorxMelodifySDK_iOS.a */; };
 		1F78BE651BDF50E400378539 /* libUtility_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F78BE621BDF50E400378539 /* libUtility_iOS.a */; };
-		1F78BE681BDF526500378539 /* samples in Resources */ = {isa = PBXBuildFile; fileRef = 1F78BE671BDF526500378539 /* samples */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -240,7 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F78BE681BDF526500378539 /* samples in Resources */,
+				1F0FEA5B1BE0BDB500F454E2 /* samples in Resources */,
 				1F78BE281BDF215200378539 /* Main.storyboard in Resources */,
 				1F78BE2D1BDF215200378539 /* LaunchScreen.xib in Resources */,
 				1F78BE2A1BDF215200378539 /* Images.xcassets in Resources */,
