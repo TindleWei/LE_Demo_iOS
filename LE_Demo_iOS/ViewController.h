@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Melodify.h"
+
+//@class Melodify;
+
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *startBtn;
+@property (weak, nonatomic) IBOutlet UIButton *stopBtn;
+@property (weak, nonatomic) IBOutlet UIButton *restartBtn;
+@property (weak, nonatomic) IBOutlet UIButton *playBtn;
 
 @end
 

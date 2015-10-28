@@ -1,22 +1,106 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Little Endian's           Melodify SDK Demo     from TindleWei" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="228" translatesAutoresizingMaskIntoConstraints="NO" id="zC4-aK-iK1">
+                                <rect key="frame" x="74" y="65" width="227" height="181"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.068553458238769904" green="0.51751730811605923" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lN6-Nn-WAO">
+                                <rect key="frame" x="22" y="306" width="88" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startClick:event:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zul-x2-SOi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ef-Gk-wOT">
+                                <rect key="frame" x="143" y="306" width="88" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopClick:event:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ezL-TJ-mHL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aos-LE-Lpl">
+                                <rect key="frame" x="143" y="402" width="88" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Od0-aZ-IVB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58a-qa-xPx">
+                                <rect key="frame" x="261" y="306" width="88" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartClick:event:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DKx-3G-BA4"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8ef-Gk-wOT" firstAttribute="leading" secondItem="lN6-Nn-WAO" secondAttribute="trailing" constant="30" id="ANC-E7-cyw"/>
+                            <constraint firstItem="zC4-aK-iK1" firstAttribute="top" secondItem="8ef-Gk-wOT" secondAttribute="top" constant="-223" id="Cva-di-mpo"/>
+                            <constraint firstItem="lN6-Nn-WAO" firstAttribute="bottom" secondItem="8ef-Gk-wOT" secondAttribute="bottom" id="GpJ-Wf-mmp"/>
+                            <constraint firstItem="8ef-Gk-wOT" firstAttribute="top" secondItem="zC4-aK-iK1" secondAttribute="bottom" constant="60" id="IS0-EH-irJ"/>
+                            <constraint firstAttribute="centerX" secondItem="8ef-Gk-wOT" secondAttribute="centerX" id="PYb-9V-rKg"/>
+                            <constraint firstAttribute="centerY" secondItem="8ef-Gk-wOT" secondAttribute="centerY" constant="-0.5" id="PcE-Lh-y1w"/>
+                            <constraint firstItem="8ef-Gk-wOT" firstAttribute="leading" secondItem="lN6-Nn-WAO" secondAttribute="trailing" constant="2" id="WUL-Ov-zVS"/>
+                            <constraint firstItem="lN6-Nn-WAO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Wwo-VI-e7a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="58a-qa-xPx" secondAttribute="trailing" constant="10" id="ZGQ-Bz-Ufk"/>
+                            <constraint firstItem="58a-qa-xPx" firstAttribute="leading" secondItem="8ef-Gk-wOT" secondAttribute="trailing" constant="30" id="ag8-pS-iYa"/>
+                            <constraint firstItem="58a-qa-xPx" firstAttribute="bottom" secondItem="8ef-Gk-wOT" secondAttribute="bottom" id="dgj-Zg-HWy"/>
+                            <constraint firstAttribute="centerX" secondItem="zC4-aK-iK1" secondAttribute="centerX" id="kwh-ld-oLS"/>
+                            <constraint firstItem="58a-qa-xPx" firstAttribute="baseline" secondItem="8ef-Gk-wOT" secondAttribute="baseline" id="l8C-8B-qi1"/>
+                            <constraint firstAttribute="centerX" secondItem="aos-LE-Lpl" secondAttribute="centerX" id="m1X-ev-bZb"/>
+                            <constraint firstItem="lN6-Nn-WAO" firstAttribute="baseline" secondItem="8ef-Gk-wOT" secondAttribute="baseline" id="tV3-Ak-4ZR"/>
+                            <constraint firstItem="aos-LE-Lpl" firstAttribute="top" secondItem="8ef-Gk-wOT" secondAttribute="bottom" constant="40" id="x7H-nH-9KZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Cva-di-mpo"/>
+                                <exclude reference="tV3-Ak-4ZR"/>
+                                <exclude reference="ANC-E7-cyw"/>
+                                <exclude reference="WUL-Ov-zVS"/>
+                                <exclude reference="ag8-pS-iYa"/>
+                                <exclude reference="l8C-8B-qi1"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="playBtn" destination="aos-LE-Lpl" id="0Rv-mJ-8QJ"/>
+                        <outlet property="restartBtn" destination="58a-qa-xPx" id="HWk-MX-XJQ"/>
+                        <outlet property="startBtn" destination="lN6-Nn-WAO" id="M8Z-RS-hAk"/>
+                        <outlet property="stopBtn" destination="8ef-Gk-wOT" id="Gms-rm-ArK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
